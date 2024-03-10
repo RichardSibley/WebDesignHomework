@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Paint and Paper</title>
+    <!-- Define characterset-->
+    <meta charset="UTF-8">
+    <!-- Define page description -->
+    <meta name="description" content="A page for an art gallery">
+    <!-- Define author -->
+    <meta name="author" contet="Richard Sibley">
+    <!-- Viewpoint meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- style elements * body & table -->
+    <style>
+        body {
+            background-color:darkkhaki;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 16px;
+        }
+
+        table {
+            border: 2px solid rgb(93, 68, 35);
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sized Image -->
+    <p style="text-align:center;">
+        <img src ="./Images/GalleryBanner.png " width="700" height="400" alt="Gallery Logo" title="Paint and Paper Gallery Logo">
+    </p>
+        <hr>
+        <h1> How to Contact Us!</h1>
+    <a href="mailto:RSFXMediaArts@gmail.com">Send Us an Email!</a>
+    <address>
+        Paint and Paper: Watercolor Gallery
+        <br />
+        A Subsidiary of @RSFXMediaArts
+        <br />
+        1234 Anywhere St.
+        <br />
+        Thistown, ST 98765
+        <br />
+        <a href=""telephone: 406 - 215 - 7314" target=""_blank" rel=""noopener">406 -215-7314</a>
+        <br />
+    </address>
+    <!-- Table -->
+    <p>
+    <table>
+        <tr>
+            <th>Days Open</th>
+            <th>Hours Open</th>
+        </tr>
+        <tr>
+            <td>Mondays</td>
+            <td>9:00 am to 5:00 pm</td>
+        </tr>
+        <tr>
+            <td>Tuesdays</td>
+            <td>9:00 am to 5:00 pm</td>
+        </tr>
+        <tr>
+            <td>Wednesdays</td>
+            <td>9:00 am to 5:00 pm</td>
+        </tr>
+        <tr>
+            <td>Thursdays</td>
+            <td>9:00 am to 5:00 pm</td>
+        </tr>
+        <tr>
+            <td>Fridays</td>
+            <td>9:00 am to 5:00 pm</td>
+        </tr>
+        <tr>
+            <td>Saturdays</td>
+            <td>11:00 am to 8:00 pm</td>
+        </tr>
+        <tr>
+            <td>Sundays</td>
+            <td>Closed</td>
+        </tr>
+        <tr>
+           <td><strong>Times may vary due</strong></td>
+           <td><strong>to gallery events!</strong></td>
+        </tr>
+    </table>
+    </p>
+    <!-- Form -->
+    <form method="post" action="index.html">
+        Your name:
+        <br />
+        <!-- Text Boxes-->
+        <input type="text" id="name" placeholder="First & Last Name" autofocus>
+        <h2>I would like info on:</h2>
+        <input type="checkbox" name="info-on" value="Art Submissions">Art Submission Information
+        <br />
+        <input type="checkbox" name="info-on" value="Event Hosting">Event Hosting
+        <br />
+        <input type="checkbox" name="info-on" value="Upcoming Events">Upcoming Events
+        <br /> 
+        <input type="checkbox" name="info-on" value="General Information">General Information
+        <br />
+        <br />
+        Additional Questions
+        <br />
+        <!-- Text Area -->
+        <textarea name="additional questions" rows="20" col="40">Type any additional questions or comments here!</textarea>
+        <!-- Button -->
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+    <hr>
+    <p style="text-align:center;">Thanks for visiting out webpage!</p>
+</body>
+</html>
