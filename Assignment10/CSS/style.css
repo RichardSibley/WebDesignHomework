@@ -1,0 +1,39 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+h1, h2 {
+    color: rebeccapurple
+}
+
+.main-container {
+    border-style: double;
+    border-width: 8px;
+    border-color: black;
+    padding: 10px;
+    background: lightblue;
+    width: 90%;
+    margin: auto;
+}
+
+div.align{
+    text-align: center;
+}
+
+.secondary-container{
+    margin: auto;
+    width: 80%;
+    padding: 30px;
+    border-style: groove;
+    border-color: burlywood;
+    background: lightgoldenrodyellow;
+}
+
+#mainheader{
+    position: relative;
+    left: 15px;
+    top: 5px;
+    color: darkslateblue;
+    font-size: 70px;
+}
