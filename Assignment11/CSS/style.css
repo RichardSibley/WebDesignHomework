@@ -1,0 +1,81 @@
+div{
+    text-align: left;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    margin: 10px;
+}
+
+img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+img:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+}
+
+.centertext{
+    text-align: center;
+}
+
+div.A{
+    text-indent: 50px;
+}
+
+.title{
+    font-family: Blackcastlemf-BG5n;
+    font-size: 90px;
+    text-shadow: -4px 2px 0 #4b2d2d;
+    color:rgb(255, 0, 0);
+    background-color:bisque;
+    height: 120px;
+    text-align: center;
+}
+
+#garbage{
+    font-weight: 800;
+}
+
+
+#garbage:hover:after{
+
+    content: "You should not confuse homebrew rules with optional rules, which are also a part of D&D 5e!";
+    font-weight: 800;
+    color: red;
+    font-style: bold;
+    text-decoration: underline;
+}
+
+#racesclasses{
+  font-weight: 800;
+
+}
+
+#racesclasses:hover{
+    background: url("../Images/RacesClasses.png");
+    float: inline-start;
+    display: block;
+    width: 250px;
+    height: 250px;
+}
+
+#thanks {
+    font-weight: 900;
+}
+
+#thanks:hover{
+        background-image: url("../Images/Thank You!.png");
+        float: inline-start;
+        display: block;
+        width: 250px;
+        height: 250px;
+}
