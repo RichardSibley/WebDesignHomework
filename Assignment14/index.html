@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-12">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Richard Sibley">
+        <title>Main Page - The Yellow Circle</title>
+        <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+        <style>
+            body {
+            background-color: #c3bdae;
+            font-family: 'MedievalSharp', cursive;
+            font-size: medium;
+            font-weight: bold;
+            }
+            .header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-family: 'MedievalSharp', cursive;
+            }
+            .container {
+            margin-top: 20px;
+            text-align: center;
+            }
+            h1, h2{
+            font-family: 'MedievalSharp', cursive;
+            }
+            canvas {
+            display: block;
+            margin: 0 auto;
+            border: 1px solid #000;
+            }
+            @media screen and (min-width: 768px) {
+            .container {
+                max-width: 768px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            }
+            @media screen and (min-width: 992px) {
+            .container {
+                max-width: 992px;
+            }
+            }
+            @media screen and (min-width: 1200px) {
+            .container {
+                max-width: 1200px;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mainPage">
+            <div class="header">
+            <h1>The Yellow Circle</h1>
+            </div>
+            <div class="ui container">
+            <div class="container">
+                <h2>Welcome to our tavern!</h2>
+                <br />
+                <img src="./Images/TavernImage.jpg" alt="Fantasy Tavern" width="400">
+                <br />
+                <canvas id="logoCanvas" width="200" height="200"></canvas>
+                <br />
+                <p>Step into a world of magic and adventure. Our tavern offers the finest ales, delicious meals, and tales of heroes.</p>
+                <a href="./Pages/menu.html" class="ui primary button">View Menu</a>
+                <a href="./Pages/contact.html" class="ui secondary button">Contact Us</a>
+            </div>
+            </div>
+        </div>
+
+        <script>
+            // This..uh...was difficult. Hooray for GeeksforGeeks and Stack Exchange
+            document.addEventListener("DOMContentLoaded", function() {
+            const canvas = document.getElementById("logoCanvas");
+            const ctx = canvas.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(100, 100, 50, 0, 2 * Math.PI);
+            ctx.fillStyle = "#ffcc00";
+            ctx.fill();
+            ctx.font = "30px MedievalSharp";
+            ctx.fillStyle = "#fff";
+            ctx.textAlign = "center";
+            ctx.fillText("TYC", 100, 115);
+            ctx.closePath();
+            });
+        </script>
+    </body>
+</html>
